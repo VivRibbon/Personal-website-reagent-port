@@ -1,4 +1,229 @@
-body {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+body, .page {
+  font-family: -apple-system, BlinkMacSystemFont, Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  background-color: darkgray;
+  width: 820px;
+}
+
+header{
+  line-height: 50px;
+}
+
+.hero-header{
+  line-height: 5px;
+  font-size: 25px;
+}
+
+.menu-item{
+  float: left;
+}
+
+.hero-header{
+  font-style:italic;
+}
+
+h1, h2, h3, h4{
+  text-decoration:underline;
+  text-shadow: 1px 1px darkgreen;
+}
+
+.title{
+  cursor: pointer;
+  text-shadow: 2px 2px darkgreen;
+}
+
+.title:hover{
   color: green;
 }
+
+.title:active{
+  color: #ffdeda;
+}
+
+/* CSS */
+.nav-button {
+  align-items: center;
+  background-color: #fee6e3;
+  border: 2px solid #111;
+  border-radius: 8px;
+  box-sizing: border-box;
+  color: #111;
+  cursor: pointer;
+  font-family: Inter,sans-serif;
+  font-size: 16px;
+  font-weight:bold;
+  height: 48px;
+  justify-content: center;
+  line-height: 24px;
+  max-width: 100%;
+  padding: 0 25px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.nav-button:after {
+  background-color: #111;
+  border-radius: 8px;
+  content: "";
+  display: block;
+  height: 48px;
+  left: 0;
+  width: 100%;
+  position: absolute;
+  top: -2px;
+  transform: translate(8px, 8px);
+  transition: transform .2s ease-out;
+  z-index: -1;
+}
+
+.nav-button:hover:after {
+  transform: translate(0, 0);
+}
+
+.nav-button:active {
+  background-color: #ffdeda;
+  outline: 0;
+}
+
+.nav-button:hover {
+  outline: 0;
+}
+
+@media (min-width: 768px) {
+  .nav-button {
+    padding: 0 40px;
+  }
+}
+
+dl{
+
+}
+
+dt{
+  font-size: 20px;
+  font-weight:bold;
+}
+
+dd{
+  font-size: 18px;
+  font-weight: 500;
+}
+
+/*
+a:link{
+  color: darkgreen;
+}
+
+a:visited{
+  color: green;
+}
+
+a:hover{
+  color: olive;
+} */
+
+/* CSS */
+.blog-button, .blog-back-button, .portfolio {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-decoration: none;
+  color: #000;
+  cursor: pointer;
+  border: 3px solid;
+  padding: 0.25em 0.5em;
+  box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
+  position: relative;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.portfolio{
+  line-height: 55px;
+  background-color: #E9E9ED;
+}
+
+.blog-button:hover, .blog-back-button:hover, .portfolio:hover {
+  box-shadow: 0px 0px 0px 0px;
+  top: 5px;
+  left: 5px;
+}
+
+.blog-button:active, .blog-back-button:active, .portfolio:active{
+  color:green;
+  box-shadow: 0px 0px 0px 0px;
+  top: 5px;
+  left: 5px;
+}
+
+@media (min-width: 768px) {
+  .blog-button, .blog-back-button, .portfolio {
+    padding: 0.25em 0.75em;
+  }
+}
+
+.blog-menu{
+  list-style:circle;
+}
+
+.caption{
+  text-align:left;
+}
+
+.links{
+  line-height: 35px;
+}
+
+#aboutlinks{
+  padding-left: 0;
+}
+
+img{
+  padding: 5px;
+  box-shadow: inset 0.2em 0.2em 0.2em 0 black, inset -0.2em -0.2em 0.2em 0 darkgray;
+}
+
+.border {
+    box-shadow: inset 0.2em 0.2em 0.2em 0 black, inset -0.2em -0.2em 0.2em 0 darkgray;
+}
+
+.elitlink{
+  color:green;
+  text-shadow: 1px 1px darkgreen;
+}
+
+.elitlink:visited{
+  color:green;
+}
+
+.elitlink:hover{
+  color:lightgreen;
+}
+
+details{
+  background-color: lightgray;
+  font-size: 16px;
+  padding: 5px;
+  border: 3px groove;
+}
+
+.caption{
+  text-align:sup;
+  font-style: italic;
+}
+
+.page{
+  background-color: gray;
+  border:groove;
+  border-width: 5px;
+  padding: 10px;
+  font-size: 18px;;
+  font-weight: 600;
+  text-shadow: 1px 1px darkgray;
+}
+
